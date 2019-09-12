@@ -1,0 +1,228 @@
+doctype html
+head
+    title The Auto-Tuning Website Template | Details ::
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(href='http://fonts.useso.com/css?family=Anaheim', rel='stylesheet', type='text/css')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // image slider
+    script(type='text/javascript', src='js/jquery-1.7.2.min.js')
+    script(src='js/jquery-slider.js', type='text/javascript')
+    script(src='js/easyResponsiveTabs.js', type='text/javascript')
+    link(href='css/easy-responsive-tabs.css', rel='stylesheet', type='text/css', media='all')
+    link(rel='stylesheet', href='css/global.css')
+    script(src='js/slides.min.jquery.js')
+    script.
+        $(function(){
+            $('#products').slides({
+                preload: true,
+                preloadImage: 'img/loading.gif',
+                effect: 'slide, fade',
+                crossfade: true,
+                slideSpeed: 350,
+                fadeSpeed: 500,
+                generateNextPrev: true,
+                generatePagination: false
+            });
+        });
+.wrap
+    .header
+        .logo
+            h1
+                a(href='index.html')
+                    img(src='images/logo.png', alt='')
+        .clear
+        .h_main
+            ul.nav
+                li.active
+                    a(href='index.html') &#x9996;&#x9875;
+                li
+                    a(href='maintain.html') &#x7EF4;&#x62A4;
+                li
+                    a(href='repair.html') &#x7EF4;&#x4FEE;
+                li
+                    a(href='contact.html') &#x8054;&#x7CFB;
+                li
+                    a(href='about.html') &#x5173;&#x4E8E;&#x6211;&#x4EEC;
+                li
+                    a(href='term.html') &#x6211;&#x4EEC;&#x56E2;&#x961F;
+            .search
+                form
+                    input(type='text', value='')
+                    input(type='submit', value='')
+            .clear
+    .main
+        .main1
+            .details
+                .product-details
+                    .images_3_of_2
+                        #container
+                            #products_example
+                                #products
+                                    .slides_container
+                                        a(href='#', target='_blank')
+                                            img(src='images/productslide-1.jpg', alt=' ')
+                                        a(href='#', target='_blank')
+                                            img(src='images/productslide-2.jpg', alt=' ')
+                                        a(href='#', target='_blank')
+                                            img(src='images/productslide-3.jpg', alt=' ')
+                                        a(href='#', target='_blank')
+                                            img(src='images/b-4.jpg', alt=' ')
+                                    ul.pagination
+                                        li
+                                            a(href='#')
+                                                img(src='images/deguodazhong.png', alt=' ')
+                                        li
+                                            a(href='#')
+                                                img(src='images/d_pic2.jpg', alt=' ')
+                                        li
+                                            a(href='#')
+                                                img(src='images/d_pic3.jpg', alt=' ')
+                                        li
+                                            a(href='#')
+                                                img(src='images/d_pic4.jpg', alt=' ')
+                    .desc.span_3_of_2
+                        h2
+                            | &#x5317;&#x4EAC;&#x73B0;&#x4EE3;
+                            hr
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x7387;&#x6027;&#x6709;&#x7406;
+                        p
+                        .price
+                            p
+                                span &#x6307; &#x5BFC; &#x4EF7;&#xFF1A;10&#x4E07; ~ 15&#x4E07;
+                    .clear
+                .product_desc
+                    #horizontalTab(style='display: block; width: 100%; margin: 0px;')
+                        ul.resp-tabs-list
+                            li.resp-tab-item.resp-tab-active(aria-controls='tab_item-0', role='tab') &#x4EA7;&#x54C1;&#x8BE6;&#x60C5;
+                            li.resp-tab-item(aria-controls='tab_item-1', role='tab') &#x4EA7;&#x54C1;&#x6807;&#x7B7E;
+                            li.resp-tab-item(aria-controls='tab_item-2', role='tab') &#x4EA7;&#x54C1;&#x8BC4;&#x8BBA;
+                            .clear
+                        .resp-tabs-container
+                            h2.resp-accordion.resp-tab-active(role='tab', aria-controls='tab_item-0')
+                                span.resp-arrow
+                                | Product
+                                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Details
+                            .product-desc.resp-tab-content.resp-tab-content-active(style='display:block', aria-labelledby='tab_item-0')
+                                p
+                                    | &#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#x4E0E;PHEV&#x63D2;&#x7535;&#x6DF7;&#x52A8;&#x4E24;&#x5927;&#x7EC6;&#x5206;&#x54C1;&#x7C7B;&#xFF0C;&#x4E00;&#x76F4;&#x662F;&#x65B0;&#x80FD;&#x6E90;&#x6C7D;&#x8F66;&#x53D1;&#x5C55;&#x8DEF;&#x7EBF;&#x4E2D;&#x5B9E;&#x529B;&#x6700;&#x5F3A;&#x52B2;&#x7684;&#x4E24;&#x4E2A;&#x5BF9;&#x624B;&#x3002;&#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#x7684;&#x7EED;&#x822A;&#x53D7;&#x6210;&#x672C;&#x9650;&#x5236;&#x8F83;&#x5927;&#xFF0C;&#x4F7F;&#x5176;&#x5728;&#x957F;&#x8DDD;&#x79BB;&#x51FA;&#x884C;&#x4E2D;&#x7F3A;&#x4E4F;&#x4F18;&#x52BF;&#xFF0C;&#x8FD9;&#x4E5F;&#x4E00;&#x76F4;&#x662F;&#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#x53D1;&#x5C55;&#x8DEF;&#x7EBF;&#x7684;&#x5173;&#x952E;&#x4E89;&#x8BAE;&#x70B9;&#x3002;
+                                p
+                                    | PHEV&#x867D;&#x7136;&#x7EED;&#x822A;&#x80FD;&#x529B;&#x8FDC;&#x8D85;&#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4F18;&#x4E8E;&#x71C3;&#x6CB9;&#x8F66;&#x7684;&#x7ECF;&#x6D4E;&#x6027;&#xFF0C;&#x4F46;&#x9AD8;&#x6602;&#x7684;&#x6DF7;&#x52A8;&#x7CFB;&#x7EDF;&#x6210;&#x672C;&#x63A8;&#x9AD8;&#x4E86;&#x6574;&#x8F66;&#x4EF7;&#x683C;&#xFF0C;&#x591A;&#x5E74;&#x6765;&#x4E00;&#x76F4;&#x963B;&#x6B62;&#x5176;&#x8DFB;&#x8EAB;&#x4E3B;&#x6D41;&#x5E02;&#x573A;&#x3002;
+                                    | &#x6B63;&#x56E0;&#x4E3A;&#x6B64;&#xFF0C;&#x5728;&#x524D;&#x4E9B;&#x5E74;&#x56FD;&#x5BB6;&#x53CA;&#x5730;&#x65B9;&#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#x8865;&#x8D34;&#x4E30;&#x539A;&#x7684;&#x80CC;&#x666F;&#x4E0B;&#xFF0C;&#x65B0;&#x80FD;&#x6E90;&#x6C7D;&#x8F66;&#x7528;&#x6237;&#x66F4;&#x591A;&#x51FA;&#x4E8E;&#x7ECF;&#x6D4E;&#x6027;&#x8003;&#x8651;&#xFF0C;&#x76F8;&#x5BF9;&#x66F4;&#x9752;&#x7750;&#x7EAF;&#x7535;&#x52A8;&#x6C7D;&#x8F66;&#xFF0C;&#x5BF9;PHEV&#x63D2;&#x7535;&#x6DF7;&#x52A8;&#x9C9C;&#x6709;&#x95EE;&#x6D25;&#x3002;
+                            h2.resp-accordion(role='tab', aria-controls='tab_item-1')
+                                span.resp-arrow
+                                | product Tags
+                            .product-tags.resp-tab-content(aria-labelledby='tab_item-1')
+                                p &#x79D2;&#x53D8;&#x8010;&#x529B;&#x9009;&#x624B;&#x3002;&#x7EAF;&#x7535;&#x7EED;&#x822A;85km&#xFF0C;&#x6700;&#x957F;&#x7EED;&#x822A;1037km&#xFF0C;&#x767E;&#x516C;&#x91CC;&#x6CB9;&#x8017;1.0L&#x3002;
+                                p
+                                    | &#x9886;&#x52A8;&#x63D2;&#x7535;&#x6DF7;&#x52A8;&#x5E26;&#x6765;&#x5B8C;&#x7F8E;&#x89E3;&#x51B3;&#x65B0;&#x80FD;&#x6E90;&#x6C7D;&#x8F66;&#x7EED;&#x822A;&#x7126;&#x8651;&#x3001;&#x6210;&#x672C;&#x6096;&#x8BBA;&#x7684;PHEV 2.0&#x65F6;&#x4EE3;
+                                h4 &#x6DFB;&#x52A0;&#x4F60;&#x7684;&#x6807;&#x7B7E;:
+                                .input-box
+                                    input(type='text', value='')
+                                .button
+                                    span
+                                        a(href='#') &#x52A0;&#x6807;&#x7B7E;
+                            h2.resp-accordion(role='tab', aria-controls='tab_item-2')
+                                span.resp-arrow
+                                | Product
+                                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Reviews
+                            .review.resp-tab-content(aria-labelledby='tab_item-2')
+                                h4
+                                    | &#x8BC4;&#x8BBA;&#x6570;&#x636E;&#x6765;&#x6E90;&#x4E8E;
+                                    a(href='#') &#x6C7D;&#x8F66;&#x4E4B;&#x5BB6;
+                                ul
+                                    li
+                                        | &#x4EF7;&#x94B1; :
+                                        a(href='#')
+                                            img(src='images/price-rating.png', alt='')
+                                    li
+                                        | &#x4EF7;&#x503C; :
+                                        a(href='#')
+                                            img(src='images/value-rating.png', alt='')
+                                    li
+                                        | &#x8D28;&#x91CF; :
+                                        a(href='#')
+                                            img(src='images/quality-rating.png', alt='')
+                                p
+                                    | &#x5317;&#x4EAC;&#x73B0;&#x4EE3;&#x8FD9;&#x4E24;&#x5E74;&#x5728;&#x4E2D;&#x56FD;&#x7684;&#x56F0;&#x5883;&#xFF0C;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x5728;&#x4E8E;&#x758F;&#x4E8E;&#x7BA1;&#x7406;&#xFF0C;&ldquo;&#x8428;&#x5FB7;&rdquo;&#x7206;&#x53D1;&#x53EA;&#x662F;&#x5BFC;&#x706B;&#x7D22;&#xFF0C;&#x4E00;&#x76F4;&#x5FD9;&#x4E8E;&#x6269;&#x5927;&#x5E02;&#x573A;&#x4EFD;&#x989D;&#xFF0C;&#x5FD9;&#x4E8E;&#x8FFD;&#x6C42;&#x9500;&#x91CF;&#xFF0C;&#x6839;&#x672C;&#x6765;&#x4E0D;&#x53CA;&#x53BB;&#x592F;&#x5B9E;&#x5E02;&#x573A;&#x57FA;&#x7840;&#xFF0C;&#x63D0;&#x5347;&#x54C1;&#x724C;&#x5F62;&#x8C61;&#x3002;&#x4F0A;&#x5170;&#x7279;&#x3001;&#x60A6;&#x52A8;&#x3001;&#x6717;&#x52A8;&#x3001;&#x9886;&#x52A8;&#x4E00;&#x5EA6;&#x56DB;&#x4EE3;&#x4EA7;&#x54C1;&#x540C;&#x5802;&#xFF0C;&#x540D;&#x9A6D;&#xFF08;&#x4E94;&#x4EE3;&#x7D22;&#x7EB3;&#x5854;&#xFF09;&#x3001;&#x5FA1;&#x7FD4;&#xFF08;&#x516D;&#x4EE3;&#x7D22;&#x7EB3;&#x5854;&#xFF09;&#x3001;&#x9886;&#x7FD4;&#xFF08;&#x4E03;&#x4EE3;&#x7D22;&#x7EB3;&#x5854;&#xFF09;&#x3001;&#x516B;&#x4EE3;&#x7D22;&#x7EB3;&#x5854;&#x518D;&#x6B21;&#x56DB;&#x4EE3;&#x540C;&#x5802;&#xFF0C;&#x4EA7;&#x54C1;&#x4EF7;&#x683C;&#x8D8A;&#x505A;&#x8D8A;&#x4F4E;&#x7AEF;&#xFF0C;2013&#x5E74;&#x53C8;&#x63A8;&#x51FA;&#x4E86;&#x540D;&#x56FE;&#x8FD9;&#x79CD;&#x4E13;&#x4E3A;&#x4E2D;&#x56FD;&#x5E02;&#x573A;&#x5F00;&#x53D1;&#x7684;&#x5927;&#x4E14;&#x4FBF;&#x5B9C;&#x7684;&#x8F66;&#x578B;&#xFF0C;&#x867D;&#x7136;&#x81F3;&#x4ECA;&#x4ECD;&#x662F;&#x5317;&#x4EAC;&#x73B0;&#x4EE3;&#x7684;&#x9500;&#x91CF;&#x62C5;&#x5F53;&#xFF0C;&#x4F46;&#x662F;&ldquo;&#x73B0;&#x4EE3;&rdquo;&#x8FD9;&#x4E2A;&#x54C1;&#x724C;&#xFF0C;&#x4E5F;&#x5728;&#x4E2D;&#x56FD;&#x5E02;&#x573A;&#x5F7B;&#x5E95;&#x4F4E;&#x7AEF;&#x5316;&#x4E86;&#xFF0C;&#x8DDF;&#x8D28;&#x91CF;&#x5E76;&#x6CA1;&#x6709;&#x5F88;&#x5927;&#x5173;&#x7CFB;
+                                .your-review
+                                    h3 &#x4F60;&#x5982;&#x4F55;&#x8BC4;&#x4EF7;&#x8FD9;&#x4E2A;&#x4EA7;&#x54C1;?
+                                    p &#x5199;&#x81EA;&#x5DF1;&#x7684;&#x8BC4;&#x8BBA;?
+                                    form
+                                        div
+                                            span
+                                                label
+                                                    | &#x6635;&#x79F0;
+                                                    span.red *
+                                            span
+                                                input(type='text', value='')
+                                        div
+                                            span
+                                                label
+                                                    | &#x4F60;&#x7684;&#x8BC4;&#x8BBA;&#x6458;&#x8981;
+                                                    span.red *
+                                            span
+                                                input(type='text', value='')
+                                        div
+                                            span
+                                                label
+                                                    | &#x8BC4;&#x8BBA;
+                                                    span.red *
+                                            span
+                                                textarea
+                                        div
+                                            span
+                                                input(type='submit', value='提交评论')
+                script(type='text/javascript').
+                    $(document).ready(function() {
+                        $('#horizontalTab').easyResponsiveTabs({
+                            type: 'default', //Types: default, vertical, accordion
+                            width: 'auto', //auto or any width like 600px
+                            fit: true // 100% fit in a container
+                        });
+                    });
+                .content_bottom
+                    .text-h1.top1.btm
+                        h2 &#x66F4;&#x591A;&#x7684;&#x7C7B;&#x4F3C;&#x4EA7;&#x54C1;
+                    .div2
+                        #mcts1
+                            img(src='images/deguodazhong.jpg', alt='')
+                            img(src='images/d_pic1.jpg', alt='')
+                            img(src='images/d_pic3.jpg', alt='')
+                            img(src='images/d_pic4.jpg', alt='')
+                            img(src='images/d_pic1.jpg', alt='')
+                            img(src='images/d_pic4.jpg', alt='')
+            .clear
+    .footer
+        .f_left
+            .f_nav
+                ul
+                    li
+                        a(href='') &#x5173;&#x4E8E;&#x6211;&#x4EEC;
+                    li
+                        a(href='') &#x5730;&#x70B9;&#x7AD9;&#x56FE;
+                    li
+                        a(href='') &#x5BA2;&#x6237;&#x670D;&#x52A1;
+                    li
+                        a(href='') &#x641C;&#x7D22;&#x6761;&#x4EF6;
+                    li
+                        a(href='') &#x8054;&#x7CFB;&#x6211;&#x4EEC;
+            .copy
+                p.w3-link
+                    | &copy; All Rights Reserved | More Templates
+                    a(href='#', target='_blank', title='汽车展示') &#x6C7D;&#x8F66;&#x5C55;&#x793A;
+                    |  -
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Collect from
+                    a(href='#', title='汽车展示', target='_blank') &#x6C7D;&#x8F66;&#x5C55;&#x793A;
+        .social-icons
+            ul
+                li.icon1
+                    a(href='#', target='_blank')
+                li.icon2
+                    a(href='#', target='_blank')
+                li.icon3
+                    a(href='#', target='_blank')
+                li.icon4
+                    a(href='#', target='_blank')
+                .clear
+        .clear

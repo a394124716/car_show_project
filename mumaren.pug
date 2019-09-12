@@ -1,0 +1,188 @@
+doctype html
+head
+    title &#x7267;&#x9A6C;&#x4EBA;&#x8BE6;&#x60C5;&#x9875;&#x9762;
+    meta(name='keywords', content='create from keywords')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Parisienne', rel='stylesheet', type='text/css')
+    // CSS Files
+    link(rel='stylesheet', type='text/css', media='screen', href='style.css')
+    link(rel='stylesheet', type='text/css', media='screen', href='menu/css/simple_menu.css')
+    // Contact Form
+    link(href='contact_form/css/style.css', media='screen', rel='stylesheet', type='text/css')
+    link(href='contact_form/css/uniform.css', media='screen', rel='stylesheet', type='text/css')
+    //
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+      <script type="text/javascript" src="contact_form/js/jquery.tools.js"></script>
+      <script type="text/javascript" src="contact_form/js/jquery.uniform.min.js"></script>
+      <script type="text/javascript" src="contact_form/js/main.js"></script>
+    // JS Files
+    script(src='js/jquery.tools.min.js', type='text/javascript')
+    script(type='text/javascript').
+        $(function() {
+            $("#prod_nav ul").tabs("#panes > div", {effect: 'fade', fadeOutSpeed: 400});
+        });
+    script(type='text/javascript').
+        $(document).ready(function(){
+            $(".pane-list li").click(function(){
+                window.location=$(this).find("a").attr("href");return false;
+            });
+        }); //close doc ready
+.header
+    #site_title
+        a(href='index.html')
+            img(src='img/mumarenlogo.png')
+    // Main Menu
+    ol#menu
+        li.active_menu_item
+            a(href='index.html') home
+            // sub menu
+        // END sub menu
+        // END sub menu
+        li
+            a(href='contact.html') contact
+// END header
+.copyrights
+    | Collect from
+    a(href='http://www.cssmoban.com/', title='网站模板') &#x7F51;&#x7AD9;&#x6A21;&#x677F;
+#container
+    // tab panes
+    #prod_wrapper
+        // END tab panes
+        br(clear='all')
+        // navigator
+        #prod_nav
+            ul
+                li
+                    a(href='#1')
+                        img(src='img/demo/1.jpg', width='160', alt='demo')
+                        strong Class aptent
+                        |  $ 199
+                li
+                    a(href='#2')
+                        img(src='img/demo/2.jpg', width='160', alt='demo')
+                        strong Sed dui risus
+                        |  $ 125
+                li
+                    a(href='#3')
+                        img(src='img/demo/3.jpg', width='160', alt='demo')
+                        strong Pellentesque quis
+                        |  $ 480
+                li
+                    a(href='#4')
+                        img(src='img/demo/4.jpg', width='160', alt='demo')
+                        strong Mauris elementum
+                        |  $ 1099
+                li
+                    a(href='#5')
+                        img(src='img/demo/5.jpg', width='160', alt='demo')
+                        strong Cras et malesuada
+                        |  $ 99
+                li
+                    a(href='#1')
+                        img(src='img/demo/1.jpg', width='160', alt='demo')
+                        strong Class aptent
+                        |  $ 199
+                li
+                    a(href='#2')
+                        img(src='img/demo/2.jpg', width='160', alt='demo')
+                        strong Sed dui risus
+                        |  $ 125
+                li
+                    a(href='#3')
+                        img(src='img/demo/3.jpg', width='160', alt='demo')
+                        strong Pellentesque quis
+                        |  $ 480
+                li
+                    a(href='#4')
+                        img(src='img/demo/4.jpg', width='160', alt='demo')
+                        strong Mauris elementum
+                        |  $ 1099
+                li
+                    a(href='#5')
+                        img(src='img/demo/5.jpg', width='160', alt='demo')
+                        strong Cras et malesuada
+                        |  $ 99
+        // END navigator
+    // END prod wrapper
+    div(style='clear:both')
+    .one-third
+        h2 Business Solutions
+        p
+            | Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+        p(style='text-align:right; margin-right: 15px')
+            a.button_small(href='#') Find out more
+    .one-third
+        h2 Become a Partner
+        p
+            | Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+        p(style='text-align:right; margin-right: 15px')
+            a.button_small(href='#') Contact Us Today
+    .one-third.last
+        h2 Latest News
+        p
+            | Nulla hendrerit commodo tortor, vitae elementum magna convallis nec. Nam tempor nibh a purus aliquam et adipiscing elit gravida.
+        p(style='text-align:right; margin-right: 15px')
+            a.button_small(href='#') Read Article
+    div(style='clear:both')
+    .box_highlight(style='margin-top:40px')
+        h2(style='text-align:center') Some kind of sales pitch goes here!
+    .one-half.last
+        .heading_bg
+        //
+          Edit process_form.php to make the form work with your e-mail address. If you need to create more forms go to www.csstemplateheaven.com/tools/form_builder
+          IMPORTANT! Change action="#" to action="contact_form/process_form.php"
+        form.TTWForm(action='#', method='post', novalidate='')
+            #field1-container.field.f_50
+                label(for='field1') Name
+                input#field1(name='name', required='required', type='text')
+            #field2-container.field.f_50
+                label(for='field2') Telephone
+                input#field2(name='tel', required='required', type='text')
+            #field5-container.field.f_50
+                label(for='field5') Email
+                input#field5(name='email', required='required', type='email')
+            #field4-container.field.f_100
+                label(for='field4') Message
+                textarea#field4(rows='5', cols='20', name='message', required='required')
+            #form-submit.field.f_100.clearfix.submit
+                input(value='Submit', type='submit')
+    div(style='clear:both; height: 40px')
+// END container
+#footer
+    // First Column
+    .one-fourth
+        h3 Useful Links
+        ul.footer_links
+            li
+                a(href='#') Lorem Ipsum
+            li
+                a(href='#') Ellem Ciet
+            li
+                a(href='#') Currivitas
+            li
+                a(href='#') Salim Aritu
+    // Second Column
+    .one-fourth
+        h3 Terms
+        ul.footer_links
+            li
+                a(href='#') Lorem Ipsum
+            li
+                a(href='#') Ellem Ciet
+            li
+                a(href='#') Currivitas
+            li
+                a(href='#') Salim Aritu
+    // Third Column
+    .one-fourth
+        h3 Information
+        |         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet enim id dui tincidunt vestibulum rhoncus a felis.
+    // Fourth Column
+    .one-fourth.last
+        h3 Socialize
+        img(src='img/icon_fb.png', alt='Facebook')
+        img(src='img/icon_twitter.png', alt='Facebook')
+        img(src='img/icon_in.png', alt='Facebook')
+    div(style='clear:both')
+// END footer

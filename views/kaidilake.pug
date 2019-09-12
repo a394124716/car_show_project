@@ -1,0 +1,334 @@
+doctype html
+//if lt IE 7
+//if IE 7
+//if IE 8
+// [if (gte IE 9)|!(IE)] <!
+// <![endif]
+// <![endif]
+head
+    //
+      Basic Page Needs
+      ==================================================
+    meta(charset='utf-8')
+    title cssmoban
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+      Mobile Specific Metas
+      ==================================================
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    //
+      CSS
+      ==================================================
+    link(rel='stylesheet', href='css/zerogrid.css')
+    link(rel='stylesheet', href='css/style1.css')
+    link(rel='stylesheet', href='css/responsiveslides.css')
+    script(src='js/jquery-latest.min.js')
+    script(src='js/script.js')
+    script(src='js/jquery183.min.js')
+    script(src='js/responsiveslides.min.js')
+    script.
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow
+            $("#slider").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    //if lt IE 8
+      div(style=' clear: both; text-align:center; position: relative;')
+        a(href='http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode')
+          img(src='http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg', border='0', height='42', width='820', alt='You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.')
+    //if lt IE 9
+      script(src='js/html5.js')
+      script(src='js/css3-mediaqueries.js')
+    link(type='text/css', rel='stylesheet', charset='UTF-8', href='https://translate.googleapis.com/translate_static/css/translateelement.css')
+.wrap-body
+    // ////////////////////////////////////Header
+    header.bg-theme
+        .wrap-header.zerogrid
+            .row
+                #cssmenu
+                    #menu-button
+                        font(style='vertical-align: inherit;')
+                            font(style='vertical-align: inherit;') &#x83DC;&#x5355;
+                    ul(style='display: none;')
+                        li.active
+                            a(href='index.html')
+                                font(style='vertical-align: inherit;')
+                                    font(style='vertical-align: inherit;') &#x4E3B;&#x9875;
+                        li
+                            a(href='#')
+                                font(style='vertical-align: inherit;')
+                                    font(style='vertical-align: inherit;') &#x6C7D;&#x8F66;
+                        li
+                            a(href='KadiLakeSingle.html')
+                                font(style='vertical-align: inherit;')
+                                    font(style='vertical-align: inherit;') &#x5173;&#x4E8E;
+                        li
+                            a(href='contact.html')
+                                font(style='vertical-align: inherit;')
+                                    font(style='vertical-align: inherit;') &#x8054;&#x7CFB;
+                a.logo(href='index.html')
+                    img(src='images/logo.png')
+    // ////////////////////////////////////Container
+    section#container
+        div
+            .wrap-container.clearfix
+                #main-content
+                    .wrap-box(style='background: #fff; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);')
+                        // Start Box
+                        .zerogrid
+                            .header
+                                h1
+                                    font(style='vertical-align: inherit;')
+                                        font(style='vertical-align: inherit;') &#x5361;&#x8FEA;&#x62C9;&#x514B;&#x76F8;&#x4F3C;&#x540D;&#x8F66;&#x5C55;&#x793A;&#x8BE6;&#x60C5;&#x9875;&#x9762;
+                            .row
+                                .col-2-3
+                                    .wrap-col
+                                        .slider
+                                            // Slideshow
+                                            .callbacks_container
+                                                ul#slider.rslides.callbacks.callbacks1
+                                                    li#callbacks1_s0.callbacks1_on(style='display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out 0s;')
+                                                        img(src='images/product-slide1.jpg', alt='')
+                                                    li#callbacks1_s1(style='float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;')
+                                                        img(src='images/product-slide2.jpg', alt='')
+                                                a.callbacks_nav.callbacks1_nav.prev(href='#')
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x4E0A;&#x4E00;&#x9875;
+                                                a.callbacks_nav.callbacks1_nav.next(href='#')
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x4E0B;&#x4E00;&#x9875;
+                                            .clear
+                                .col-1-3
+                                    .wrap-col
+                                        p.price &euro;78,400
+                                        ul.specs
+                                            li
+                                                strong Make
+                                                span Bentley
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                font(style='vertical-align: inherit;')
+                                                    span
+                                                        font(style='vertical-align: inherit;') &#x5927;&#x9646;
+                                                    strong
+                                                        font(style='vertical-align: inherit;') &#x6A21;&#x578B;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x6CE8;&#x518C;&#x5E74;&#x4EFD;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 2010
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x91CC;&#x7A0B;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 23,400&#x516C;&#x91CC;
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x529F;&#x7387;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 230 HP
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x71C3;&#x6599;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x67F4;&#x6CB9;
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x53D8;&#x901F;&#x7BB1;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x624B;&#x518C;
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x5EA7;&#x4F4D;&#x6570;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 4
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x95E8;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 2/3
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x6392;&#x653E;&#x7B49;&#x7EA7;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') EURO3
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x8F66;&#x578B;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') Cabrio / Roadster
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x989C;&#x8272;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x7EFF;&#x8272;
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x5B89;&#x5168;&#x6C14;&#x56CA;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') 5
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x6C14;&#x5019;&#x63A7;&#x5236;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x7A7A;&#x8C03;
+                                            li
+                                                strong
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x635F;&#x574F;&#x8F66;&#x8F86;
+                                                span
+                                                    font(style='vertical-align: inherit;')
+                                                        font(style='vertical-align: inherit;') &#x65E0;
+                    .wrap-box
+                        .zerogrid
+                            .row
+                                .col-2-3
+                                    .wrap-col
+                                        .info
+                                            h2.h3
+                                                font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;') &#x529F;&#x80FD;&#x96C6;
+                                            p
+                                                font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;') ABS&#xFF0C;&#x8F85;&#x52A9;&#x52A0;&#x70ED;&#xFF0C;&#x4E2D;&#x592E;&#x95E8;&#x9501;&#xFF0C;&#x5DE1;&#x822A;&#x63A7;&#x5236;&#xFF0C;&#x7535;&#x52A0;&#x70ED;&#x5EA7;&#x6905;&#xFF0C;&#x7535;&#x52A8;&#x8F66;&#x7A97;&#xFF0C;ESP&#xFF0C;&#x56DB;&#x8F6E;&#x9A71;&#x52A8;&#xFF0C;&#x9632;&#x76D7;&#x5668;&#xFF0C;&#x771F;&#x76AE;&#x5EA7;&#x6905;&#xFF0C;&#x5BFC;&#x822A;&#x7CFB;&#x7EDF;&#xFF0C;&#x5012;&#x8F66;&#x96F7;&#x8FBE;&#xFF0C;&#x52A9;&#x529B;&#x8F6C;&#x5411;&#xFF0C;&#x5929;&#x7A97;&#xFF0C;&#x6302;&#x8F66;&#x8054;&#x8F74;&#x5668;&#xFF0C;&#x6C19;&#x6C14;&#x5927;&#x706F;
+                                        // /.post
+                                        .info
+                                            h2.h3
+                                                font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;') &#x8F66;&#x8F86;&#x63CF;&#x8FF0;
+                                            p
+                                                font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;') &#x9ED1;&#x8272;&#x5408;&#x91D1;&#xFF0C;&#x536B;&#x661F;&#x5BFC;&#x822A;&#xFF0C;&#x84DD;&#x7259;&#xFF0C;4&#x5E2D;&#xFF0C;&#x9676;&#x74F7;&#x5236;&#x52A8;&#x5668;&#xFF0C;&#x7535;&#x6E90;&#x542F;&#x52A8;&#xFF0C;&#x8F6F;&#x5173;&#x95ED;&#x95E8;&#xFF0C;&#x963F;&#x5C14;&#x574E;&#x5854;&#x62C9;&#x8F66;&#x9876;&#x5185;&#x886C;&#xFF0C;&#x53CC;&#x5C42;&#x73BB;&#x7483;&#xFF0C;&#x95E8;&#x9501;&#xFF0C;&#x65E0;&#x94A5;&#x5319;&#x542F;&#x52A8;&#xFF0C;&#x78B3;&#x7EA4;&#x7EF4;&#x548C;&#x77ED;&#x5212;&#x7EBF;&#x95E8;&#x63D2;&#x5165;&#xFF0C;iPod&#x8FDE;&#x63A5;&#x3002;
+                                                    font(style='vertical-align: inherit;') Lorem&#x5B58;&#x6709;&#x60B2;&#x5750;&#x963F;&#x6885;&#x5FB7;&#xFF0C;consectetur adipiscing ELIT&#xFF0C;sed&#x7684;tempor&#x548C;&#x6D3B;&#x529B;&#xFF0C;&#x4F7F;&#x52B3;&#x52A8;&#x548C;&#x60B2;&#x4F24;&#xFF0C;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x7684;&#x4E8B;&#x60C5;&#x8981;&#x505A;eiusmod&#x3002;
+                                                    font(style='vertical-align: inherit;') &#x591A;&#x5E74;&#x6765;&#xFF0C;&#x6211;&#x4F1A;&#x6765;&#x7684;&#xFF0C;&#x8C01;&#x5C06;&#x4F1A;nostrud aliquip&#x4E86;&#x5979;&#x953B;&#x70BC;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x4F7F;&#x523A;&#x6FC0;&#x63AA;&#x65BD;&#xFF0C;&#x5982;&#x679C;&#x5B66;&#x533A;&#x548C;&#x957F;&#x5BFF;&#x3002;
+                                                    font(style='vertical-align: inherit;') &#x60F3;&#x6210;&#x4E3A;&#x5728;cupidatat cillum&#x75BC;&#x75DB;&#x5DF2;&#x7ECF;&#x5728;DUIS&#x7B49;dolore&#x9EA6;&#x683C;&#x7EB3;&#x88AB;&#x6279;&#x8BC4;&#x9003;&#x79BB;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x7ED3;&#x679C;&#x7684;&#x4E50;&#x8DA3;&#x3002;
+                                                    font(style='vertical-align: inherit;') Excepteur cupidatat&#x9ED1;&#x4EBA;&#x5C31;&#x4E0D;&#x662F;excepteur&#xFF0C;&#x8212;&#x7F13;&#x5FC3;&#x7075;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#xFF0C;&#x4ED6;&#x4EEC;&#x629B;&#x5F03;&#x4E86;&#x90A3;&#x4E9B;&#x8C01;&#x662F;&#x8D23;&#x602A;&#x4F60;&#x7684;&#x70E6;&#x607C;&#x7684;&#x4E00;&#x822C;&#x8D23;&#x4EFB;&#x3002;
+                                                    font(style='vertical-align: inherit;') &#x4F46;&#x6211;&#x5FC5;&#x987B;&#x7ED9;&#x4F60;&#x5FEB;&#x4E50;&#x8C34;&#x8D23;&#xFF0C;&#x5E76;&#x8D5E;&#x626C;&#x75BC;&#x75DB;&#x7684;&#x8FD9;&#x4E00;&#x5207;&#x9519;&#x8BEF;&#x7684;&#x60F3;&#x6CD5;&#x662F;&#x5982;&#x4F55;&#x8BDE;&#x751F;&#x8BF4;&#x660E;&#xFF0C;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x8D26;&#x6237;&#x4F53;&#x7CFB;&#xFF0C;
+                                                    font(style='vertical-align: inherit;') &#x5E76;&#x9610;&#x8FF0;&#x771F;&#x7406;&#x7684;&#x4F1F;&#x5927;&#x7684;&#x63A2;&#x9669;&#x5BB6;&#x7684;&#x5B9E;&#x9645;&#x6559;&#x5BFC;&#xFF0C;&#x5C06;&#x5728;&#x4EBA;&#x7C7B;&#x5E78;&#x798F;&#x7684;&#x4E3B;&#x5EFA;&#x8BBE;&#x8005;&#x5C55;&#x5F00;&#x3002;
+                                                    font(style='vertical-align: inherit;') &#x5FEB;&#x4E50;&#x6CA1;&#x6709;&#x56E0;&#x4E3A;&#x75BC;&#x75DB;&#x6216;&#x907F;&#x514D;&#xFF0C;&#x4F46;
+                                        // /.post
+                                .col-1-3
+                                    .wrap-col
+                                        .info
+                                            h3
+                                                font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;') &#x8054;&#x7CFB;&#x65B9;&#x5F0F;
+                                            ul.specs
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x59D3;&#x540D;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x51EF;&#x6587;&#x5DF4;&#x6D1B;&#x5148;&#x751F;
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x7535;&#x8BDD;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') 234354544
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x624B;&#x673A;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') 08467334343
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x4F20;&#x771F;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') 45454678888
+                                                li
+                                                    span E-Mail
+                                                    a(href='mailto:kevinnn70@hotmail.com') kevinnn70@hotmail.com
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x90AE;&#x653F;&#x7F16;&#x7801;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') B37 7BU
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') &#x5730;&#x5740;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+                                                            font(style='vertical-align: inherit;') 12&#x73CA;&#x745A;&#x8857;
+                                                li
+                                                    span
+                                                        font(style='vertical-align: inherit;')
+                                                    font(style='vertical-align: inherit;')
+                                                        strong
+                                                            font(style='vertical-align: inherit;') &#x5E03;&#x91CC;&#x65AF;&#x6258;
+                                                        span
+                                                            font(style='vertical-align: inherit;') &#x57CE;
+                                                    strong
+                                                        font(style='vertical-align: inherit;')
+    // ////////////////////////////////////Footer
+    footer
+#goog-gt-tt.skiptranslate(dir='ltr')
+    div(style='padding: 8px;')
+        div
+            .logo
+                img(src='https://www.gstatic.com/images/branding/product/1x/translate_24dp.png', width='20', height='20', alt='Google 翻译')
+    .top(style='padding: 8px; float: left; width: 100%;')
+        h1.title.gray &#x539F;&#x6587;
+    .middle(style='padding: 8px;')
+        .original-text
+    .bottom(style='padding: 8px;')
+        .activity-links
+            span.activity-link &#x63D0;&#x4F9B;&#x66F4;&#x597D;&#x7684;&#x7FFB;&#x8BD1;&#x5EFA;&#x8BAE;
+            span.activity-link
+        .started-activity-container
+            hr(style='color: #CCC; background-color: #CCC; height: 1px; border: none;')
+            .activity-root
+    .status-message(style='display: none;')
+.goog-te-spinner-pos
+    .goog-te-spinner-animation
+        svg.goog-te-spinner(xmlns='http://www.w3.org/2000/svg', width='96px', height='96px', viewbox='0 0 66 66')
+            circle.goog-te-spinner-path(fill='none', stroke-width='6', stroke-linecap='round', cx='33', cy='33', r='30')

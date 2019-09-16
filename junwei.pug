@@ -1,0 +1,176 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/reset.css')
+    link(rel='stylesheet', href='./css/bootstrap.min.css')
+    link(rel='stylesheet', href='./css/fute.css')
+    title &#x798F;&#x7279;&#x6C7D;&#x8F66;
+header
+    img(src='./images/fute/logo.png', alt='')
+section
+    // 轮播图
+    #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+            li.active(data-target='#carousel-example-generic', data-slide-to='0')
+            li(data-target='#carousel-example-generic', data-slide-to='1')
+            li(data-target='#carousel-example-generic', data-slide-to='2')
+            li(data-target='#carousel-example-generic', data-slide-to='3')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+            .item.active
+                img(src='./images/fute/loop1.jpg', alt='')
+            .item
+                img(src='./images/fute/loop2.jpg', alt='...')
+            .item
+                img(src='./images/fute/loop3.jpg', alt='')
+            .item
+                img(src='./images/fute/loop4.jpg', alt='')
+    // 三栏布局
+    .three
+        .row
+            .col-md-4
+                p &#x5B98;&#x65B9;&#x6307;&#x5BFC;&#x4EF7;
+                .price &yen;108,800&#x5143; - &yen;150,800&#x5143;
+                button
+                    | &#x8FDB;&#x5165;&#x798F;&#x7279;&#x5546;&#x57CE;
+                    br
+                    | &#x8FDB;&#x5165;&#x7ECF;&#x9500;&#x5546;&#x62A5;&#x4EF7;
+            .col-md-4
+                | .
+                div &#x52A8;&#x529B;&#x7CFB;&#x7EDF;
+                div EcoBoost&reg; 180
+                div 1.5L
+            .col-md-4
+                p &#x8F66;&#x53A2;
+                div &#x4E09;&#x53A2;&#x4E24;&#x53A2;
+    // 精彩展示
+    .view
+        h2 &#x7CBE;&#x5F69;&#x5C55;&#x793A;
+        // 图片墙
+        #box.all
+            ul
+                li
+                    img(src='./images/fute/pic1.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic2.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic3.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic4.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic5.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic6.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic7.webp', width='200', height='186')
+                li
+                    img(src='./images/fute/pic8.webp', width='200', height='186')
+    // 细节
+    .color
+        h1 360&deg; &amp; &#x7F24;&#x7EB7;&#x8272;&#x5F69;
+        .3
+.block1
+    .left
+        h2 &#x6F6E;&#x6D41; &#x5F15;&#x9886;&#x8000;&#x76EE;&#x98CE;&#x8303;
+        .text
+            | &#x4E0D;&#x505A;&#x65F6;&#x4EE3;&#x8DDF;&#x968F;&#x8005;&#xFF0C;&#x53EA;&#x505A;&#x6F6E;&#x6D41;&#x521B;&#x9020;&#x8005;&#x3002; &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;&#x4EE5;&#x7279;&#x7ACB;&#x72EC;&#x578B;&#x7684;&#x5916;&#x89C2;&#x8BBE;&#x8BA1;&#xFF0C; &#x84C4;&#x52BF;&#x800C;&#x6765;&#xFF0C;&#x72EC;&#x73B0;&#x950B;&#x8292;&#x3002;
+    .right
+        img(src='./images/fute/right1.webp', alt='', srcset='')
+.block2
+    .left
+        img(src='./images/fute/right2.webp', alt='')
+    .right
+        h2 &#x667A;&#x80FD; &#x5F00;&#x542F;&#x65E0;&#x9650;&#x53EF;&#x80FD;
+        .text
+            | &#x65E0;&#x6240;&#x4E0D;&#x5728;&#x7684;&#x667A;&#x80FD;&#xFF0C;&#x8BA9;&#x751F;&#x6D3B;&#x968F;&#x5FC3;&#x6240;&#x9A6D;&#x3002; &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;&#x4EE5;&#x9886;&#x5148;&#x7684;&#x667A;&#x80FD;&#x79D1;&#x6280;&#xFF0C; &#x968F;&#x65F6;&#x4E3A;&#x4F60;&#x5F00;&#x542F;&#x7CBE;&#x5F69;&#x751F;&#x6D3B;&#x7684;&#x65E0;&#x9650;&#x53EF;&#x80FD;&#x3002;
+.block1
+    .left
+        h2 &#x9A7E;&#x8DA3; &#x7EB5;&#x4EAB;&#x7545;&#x5FEB;&#x6DCB;&#x6F13;
+        .text
+            | &#x6BCF;&#x4E00;&#x6B21;&#x9A7E;&#x63A7;&#xFF0C;&#x90FD;&#x662F;&#x6FC0;&#x60C5;&#x7684;&#x5F7B;&#x5E95;&#x91CA;&#x653E;&#x3002; &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;&#x4EE5;&#x5F3A;&#x608D;&#x52A8;&#x529B;&#xFF0C;&#x7CBE;&#x51C6;&#x64CD;&#x63A7;&#xFF0C; &#x5E26;&#x6765;&#x80BE;&#x4E0A;&#x817A;&#x7D20;&#x6781;&#x901F;&#x98D9;&#x5347;&#x7684;&#x7545;&#x5FEB;&#x6DCB;&#x6F13;&#x3002;
+    .right
+        img(src='./images/fute/right1.webp', alt='', srcset='')
+// 车型对比
+.compare
+    .line1
+        .left
+            | &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;&#x8F66;&#x578B;
+        .right
+            a(href='javascript:void(0)')
+                | &#x8F66;&#x578B;&#x5BF9;&#x6BD4;
+    .wc1200.row.rowE
+        .bd.mt20(style='margin: 10px;')
+            #sca1.warp-pic-list
+                #wrapBox1.wrapBox(style='height:300px;')
+                    ul#count1.count.clearfix
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E09;&#x53A2; EcoBoost &reg;180 ST Line
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E09;&#x53A2;1.5L &#x81EA;&#x52A8;&#x950B;&#x8DC3;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E09;&#x53A2; EcoBoost&reg;180&#x81EA;&#x52A8;&#x950B;&#x6F6E;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E09;&#x53A2; EcoBoost&reg; 180&#x81EA;&#x52A8;&#x950B;&#x8000;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E09;&#x53A2; EcoBoost &reg;180 ST Line
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E24;&#x53A2;1.5L&#x624B;&#x52A8;&#x950B;&#x8DC3;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E24;&#x53A2;1.5L &#x81EA;&#x52A8;&#x950B;&#x8DC3;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E24;&#x53A2; EcoBoost&reg; 180&#x81EA;&#x52A8;&#x950B;&#x6F6E;&#x578B;
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E24;&#x53A2; EcoBoost &reg;180 ST Line
+                        li
+                            a.img_wrap(href='javascript:void(0)')
+                                img(src='./images/fute/auto.webp', border='0')
+                            span.qh_title &#x65B0;&#x4E00;&#x4EE3;&#x798F;&#x514B;&#x65AF;2020&#x6B3E;- &#x4E24;&#x53A2; EcoBoost&reg; 180&#x81EA;&#x52A8;&#x950B;&#x6F6E;&#x578B;
+                a#right1.prev.icon.btn
+                a#left1.next.icon.btn
+footer
+    | copyright @minche 1995-2019 by user
+script(src='./js/jquery-2.1.4.min.js')
+script(src='./js/bootstrap.min.js')
+script(src='./js/scroll.1.3.js')
+script.
+    $(function(){
+        $('li').mouseover(function(e) {
+            $(this).siblings().stop().fadeTo(500,0.4)
+        })
+        $('li').mouseout(function(e) {
+            $(this).siblings().stop().fadeTo(500,1)
+        })
+        $("#count1").dayuwscroll({
+            parent_ele: '#wrapBox1',
+            list_btn: '#tabT04',
+            pre_btn: '#left1',
+            next_btn: '#right1',
+            path: 'left',
+            auto: true,
+            time: 3000,
+            num: 5,
+            gd_num: 5,
+            waite_time: 1000
+        })
+    })

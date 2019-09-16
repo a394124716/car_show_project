@@ -1,0 +1,174 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/reset.css')
+    link(rel='stylesheet', href='./css/bootstrap.min.css')
+    link(rel='stylesheet', href='./css/07.css')
+    title &#x65B0;&#x8F66;&#x8BE6;&#x60C5;&#x9875;
+.wrapper
+    header
+        img(src='./images/07/logo.jpg', alt='')
+    section
+        // 导航条
+        ol.breadcrumb
+            li
+                a(href='#') &#x9996;&#x9875;
+            li.active &#x65B0;&#x8F66;
+        // 车报价板块
+        .main
+            .left
+                #carousel-example-generic.carousel.slide(data-ride='carousel')
+                    // Indicators
+                    ol.carousel-indicators
+                        li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                        li(data-target='#carousel-example-generic', data-slide-to='1')
+                        li(data-target='#carousel-example-generic', data-slide-to='2')
+                    // Wrapper for slides
+                    .carousel-inner(role='listbox')
+                        .item.active
+                            img(src='./images/asidun/am6_asset_22.jpg', alt='...')
+                        .item
+                            img(src='./images/asidun/am6_asset_23.jpg', alt='...')
+                        .item
+                            img(src='./images/asidun/asidun2.jpg', alt='')
+            .right
+                h3 &#x9884;&#x7EA6;&#x8BD5;&#x9A7E;
+                form(action='')
+                    .line1.line
+                        span
+                            i *
+                            | &#x9009;&#x62E9;&#x7279;&#x7EA6;&#x5E97;&#xFF1A;
+                        select#provinceselect(name='da[province]')
+                            option(value='12335', emoney='12335') &#x5317;&#x4EAC;&#x5E02;
+                            option(value='12363', emoney='12363') &#x4E0A;&#x6D77;&#x5E02;
+                            option(value='11446', emoney='11446') &#x5929;&#x6D25;&#x5E02;
+                            option(value='12367', emoney='12367') &#x91CD;&#x5E86;&#x5E02;
+                            option(value='12346', emoney='12346') &#x5E7F;&#x4E1C;&#x7701;
+                            option(value='11643', emoney='11643') &#x5B89;&#x5FBD;&#x7701;
+                            option(value='11803', emoney='11803') &#x798F;&#x5EFA;&#x7701;
+                            option(value='12225', emoney='12225') &#x7518;&#x8083;&#x7701;
+                            option(value='12214', emoney='12214') &#x5E7F;&#x897F;&#x58EE;&#x65CF;&#x81EA;&#x6CBB;&#x533A;
+                            option(value='12285', emoney='12285') &#x8D35;&#x5DDE;&#x7701;
+                            option(value='11905', emoney='11905') &#x6D77;&#x5357;&#x7701;
+                            option(value='11957', emoney='11957') &#x6CB3;&#x5317;&#x7701;
+                            option(value='12429', emoney='12429') &#x6CB3;&#x5357;&#x7701;
+                            option(value='12109', emoney='12109') &#x9ED1;&#x9F99;&#x6C5F;&#x7701;
+                            option(value='12370', emoney='12370') &#x6E56;&#x5317;&#x7701;
+                            option(value='12283', emoney='12283') &#x6E56;&#x5357;&#x7701;
+                            option(value='12420', emoney='12420') &#x5409;&#x6797;&#x7701;
+                            option(value='12244', emoney='12244') &#x6C5F;&#x82CF;&#x7701;
+                            option(value='12375', emoney='12375') &#x6C5F;&#x897F;&#x7701;
+                            option(value='12116', emoney='12116') &#x8FBD;&#x5B81;&#x7701;
+                            option(value='12401', emoney='12401') &#x5185;&#x8499;&#x53E4;&#x81EA;&#x6CBB;&#x533A;
+                            option(value='12211', emoney='12211') &#x5B81;&#x590F;&#x56DE;&#x65CF;&#x81EA;&#x6CBB;&#x533A;
+                            option(value='12313', emoney='12313') &#x9752;&#x6D77;&#x7701;
+                            option(value='12101', emoney='12101') &#x5C71;&#x4E1C;&#x7701;
+                            option(value='12417', emoney='12417') &#x5C71;&#x897F;&#x7701;
+                            option(value='12025', emoney='12025') &#x9655;&#x897F;&#x7701;
+                            option(value='12322', emoney='12322') &#x56DB;&#x5DDD;&#x7701;
+                            option(value='12066', emoney='12066') &#x897F;&#x85CF;&#x81EA;&#x6CBB;&#x533A;
+                            option(value='12119', emoney='12119') &#x65B0;&#x7586;&#x7EF4;&#x543E;&#x5C14;&#x81EA;&#x6CBB;&#x533A;
+                            option(value='12339', emoney='12339') &#x4E91;&#x5357;&#x7701;
+                            option(value='12220', emoney='12220') &#x6D59;&#x6C5F;&#x7701;
+                    .line2.line
+                        span
+                            i *
+                            | &#x9009;&#x62E9;&#x8BD5;&#x9A7E;&#x65F6;&#x95F4;&#xFF1A;
+                        input.date_picker(style='width:226px;background: #fefefe;border: 1px solid #bbb;font-size: 14px;color: #333;padding: 7px;border-radius: 3px;', type='text')
+                    .line3.line
+                        span
+                            i *
+                            | &#x60A8;&#x7684;&#x59D3;&#x540D;&#xFF1A;
+                        input(type='text')
+                        select(name='', id='')
+                            option(value='1') &#x5148;&#x751F;
+                            option(value='2') &#x5973;&#x58EB;
+                    .line4.line
+                        span
+                            i *
+                            | &#x8BF7;&#x8F93;&#x5165;&#x8054;&#x7CFB;&#x65B9;&#x5F0F;&#xFF1A;
+                        input(type='tel')
+                    .line5.line
+                        input(type='checkbox')
+                        | &#x5DF2;&#x9605;&#x8BFB;&#x5E76;&#x63A5;&#x53D7;&#x300A;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x4FDD;&#x62A4;&#x58F0;&#x660E;&#x300B;
+                    .line6.line
+                        button.btn.btn-danger(type='submit') &#x63D0;  &#x4EA4;
+        .banner
+            img(src='./images/07/kv.jpg')
+        // tab选项卡
+        .info
+            ul.tabs
+                li.current
+                    a(href='#', title='tab1') &#x6570;&#x5B57;&#x5316;&#x96F6;&#x552E;&#x5E97;
+                li
+                    a(href='#', title='tab3') &#x8F66;&#x578B;&#x914D;&#x7F6E;
+            .container
+                #tab1.item.con.show
+                    .media
+                        .media-left.media-middle
+                            a(href='#')
+                                img.media-object(src='./images/yiqi/list1.jpg', alt='...')
+                        .media-body
+                            h4.media-heading &#x6D66;&#x6C5F;&#x4F17;&#x4EAB;&#x6C7D;&#x8F66;&#x9500;&#x552E;&#x670D;&#x52A1;&#x6709;&#x9650;&#x516C;&#x53F8;
+                            .info
+                                p
+                                    button.btn.btn-xs.btn-danger(type='button') &#x5730;&#x5740;
+                                    span &#x6D59;&#x6C5F;&#x7701;&#x91D1;&#x534E;&#x5E02;&#x6D66;&#x6C5F;&#x53BF;&#x5E73;&#x4E03;&#x8DEF;7&#x53F7;
+                                p
+                                    button.btn.btn-xs.btn-danger(type='button') &#x70ED;&#x7EBF;
+                                    span 0765-8357843758
+                #tab3.item.con
+                    h3 &#x5929;&#x7C41;&#x6C7D;&#x8F66;
+                    .tables
+                        table.table.table-striped
+                            th
+                            td 1.6L&#x81EA;&#x52A8;&#x65F6;&#x5C1A;&#x578B;
+                            td 1.6L&#x624B;&#x52A8;&#x65F6;&#x5C1A;&#x578B;
+                            td 1.6L&#x81EA;&#x52A8;&#x8212;&#x9002;&#x578B;
+                            tr
+                                td &#x957F;x&#x5BBD;x&#x9AD8;&#xFF08;mm&#xFF09;
+                                td 4259 / 1799 / 1452
+                                td 4259 / 1799 / 1452
+                                td 4259 / 1799 / 1476
+                            tr
+                                td &#x8F74;&#x8DDD;(mm)
+                                td 2637
+                                td 2637
+                                td 2637
+                            tr
+                                td &#x6CB9;&#x7BB1;&#x5BB9;&#x79EF;(L)&#x9;
+                                td 50
+                                td 50
+                                td 50
+                            tr
+                                td &#x53D1;&#x52A8;&#x673A;&#x578B;&#x5F0F;
+                                td &#x76F4;&#x5217;&#x56DB;&#x7F38;16&#x6C14;&#x9600;&#x7535;&#x63A7;&#x71C3;&#x6CB9;&#x55B7;&#x5C04;&#x9;
+                                td &#x76F4;&#x5217;&#x56DB;&#x7F38;16&#x6C14;&#x9600;&#x7535;&#x63A7;&#x71C3;&#x6CB9;&#x55B7;&#x5C04;&#x9;
+                                td &#x76F4;&#x5217;&#x56DB;&#x7F38;16&#x6C14;&#x9600;&#x7535;&#x63A7;&#x71C3;&#x6CB9;&#x55B7;&#x5C04;&#x9;
+                            tr
+                                td &#x53D8;&#x901F;&#x7BB1;&#x578B;&#x5F0F;
+                                td 5&#x901F;&#x624B;&#x52A8;
+                                td 6&#x901F;&#x624B;&#x81EA;&#x4E00;&#x4F53;
+                                td 6&#x901F;&#x81EA;&#x52A8;
+                            tr
+                                td &#x6392;&#x653E;&#x6807;&#x51C6;
+                                td &#x56FD;&#x4E94; C5&#x9;
+                                td &#x56FD;&#x4E94;&#x4E8C;&#x9636;&#x6BB5;&#x9;
+                                td &#x56FD;&#x4E94; C5
+        // 其他车型
+        .others
+script(src='./js//jquery-2.1.4.min.js')
+script(src='./js/bootstrap.min.js')
+script(src='./js/jquery.zySlide.js')
+script.
+    $(function(){
+        $('.tabs a').click(function(e) {
+            e.preventDefault()
+            $('.tabs>li').removeClass("current")
+            $(this).parent().addClass("current")
+            $(".container>div").removeClass("show")
+            $('#' + $(this).attr('title')).addClass('show')
+        })
+    })
